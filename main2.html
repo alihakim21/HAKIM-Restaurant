@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style2.css">
+      <title>HAKIM RESTAURANT</title>
+  </head>
+
+  <header>
+
+      <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        const image = document.getElementById("logo");
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+        // Smoothly shrink image based on scroll
+        if (scrollTop > 100) {
+          image.style.width = "10%";
+          image.style.marginTop = "10px";
+          image.style.marginBottom = "10px";
+        } else if (scrollTop > 50) {
+          image.style.width = "30%";
+          image.style.marginTop = "30px";
+          image.style.marginBottom = "30px";
+        } else {
+          image.style.width = "80%";
+          image.style.marginTop = "90px";
+          image.style.marginBottom = "70px";
+        }
+      }
+    </script>
+
+
+      <a href="main.html"><img id="logo" src="images\logo.jpg" alt="HAKIM"></a>
+
+  </header>
+
+  <body>
+    <div class="menu">
+        <a href="main1.html" class="snacks1">
+            <b><p>اصناف على الطاولة</p></b>
+        </a>
+        <a href="main2.html" class="snacks2">
+            <b><p>اصناف للخارج</p></b>
+        </a>
+    </div>
+
+    <div class="all">
+      <div class="menu1">
+          <table style="width: 100%;">
+            <tr>
+              <th style="border: none;"></th>
+              <th style="border: none;"></th>
+              <th style="border: none;font-size: 25px;"><b>ساندويشات مشاوي</b></th><!-- ------mashewe------ -->
+            </tr>
+          </table>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 110px;">
+                كبير: 300,000
+                <br>
+                صغير: 200,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، بطاطا، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">طاووق</th><!-- mashewe -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 500,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، بطاطا، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">طاووق إكسترا</th><!-- mashewe -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 325,000
+                <br>
+                صغير: 225,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، بطاطا، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">طاووق مع صوص</th><!-- mashewe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 325,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، بطاطا، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">طاووق فرنجي</th><!-- mashewe -->
+            </tr>
+
+            <tr>
+              <td style="width: 100px;">
+                كبير: 300,000
+                <br>
+                صغير: 200,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">لحمة</th><!-- mashewe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 500,000
+              </td>
+              <td style="width: 90px;">
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">لحمة إكسترا</th><!-- mashewe -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 250,000
+                <br>
+                صغير: 200,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">كفتة</th><!-- mashewe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 450,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">كفتة إكسترا</th><!-- mashewe -->
+            </tr>
+
+            <tr>
+              <td style="width: 100px;">
+                سعر: 50,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، حر</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">خبزة حرة</th><!-- mashewe -->
+            </tr>
+          </table>
+        </div>
+
+        <div class="menu1">
+          <table style="width: 100%;">
+            <tr>
+              <th style="border: none;"></th>
+              <th style="border: none;"></th>
+              <th style="border: none;font-size: 25px;"><b>ساندويشات سناك</b></th><!-- ------snack------ -->
+            </tr>
+          </table>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 110px;">
+                كبير: 200,000
+                <br>
+                صغير: 100,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، سلطة، كبيس، كتشب</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">بطاطا</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 350,000
+                <br>
+                صغير: 200,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، بطاطا، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">شاورما دجاج</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 300,000
+                <br>
+                صغير: 200,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، بطاطا، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">دحاج</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 325,000
+                <br>
+                صغير: 225,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، بطاطا، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">دجاج مع صوص</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 350,000
+                <br>
+                صغير: 200,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، بطاطا، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">دجاج فحم</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td style="width: 100px;">
+                كبير: 300,000
+                <br>
+                صغير: 200,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>بطاطا، توم، كبيس، بندورة، حامض</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">سودة</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 325,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>بطاطا، توم، كبيس، بندورة، حامض</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">سودة فرنجي</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 400,000
+              </td>
+              <td style="width: 90px;">
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>صوص أفوكا، جبنة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">فاهيتا</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 400,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>ميونيز، خس، درة، جبنة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">فرنسيسكو</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 400,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>ميونيز، خس، درة، جبنة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">تشكن ساب</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 400,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>ميونيز، خس، درة، كبيس، بندورة، بطاطا، جبنة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">زنجر</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 350,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، صوص كوكتيل، سلطة، بطاطا، كتشب</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">كريسبي</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 350,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، صوص كوكتيل، سلطة، بطاطا، كتشب</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">كريسبي عربي</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 350,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>ميونيز، خس، بندورة، درة، بطاطا</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">أسكالوب</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 350,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>ميونيز، خس، بندورة، درة، بطاطا</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">أسكالوب برغر</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 400,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، صوص كوكتيل، سلطة، بطاطا، كتشب + جينة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">أسكالوب مع جبنة</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 250,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">همبرغر</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 300,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">همبرغر عربي</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 300,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">همبرغر فرنجي طويل</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 300,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + بيضة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">همبرغر مع بيض</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 300,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + جبنة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">تشيز برغر</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 350,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + جبنة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">تشيز برغر عربي</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 350,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + جبنة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">تشيز برغر فرنجي طويل</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 350,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + جبنة + بيضة</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">تشيز برغر مع بيض</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 300,000
+                <br>
+                صغير: 200,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>بطاطا، توم، كبيس، بندورة، حامض</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">مقانق</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 325,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>بطاطا، توم، كبيس، بندورة، حامض</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">مقانق فرنجي</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 300,000
+                <br>
+                صغير: 200,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>بطاطا، توم، كبيس، بندورة، حامض</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">سجق</th><!-- snack -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 325,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>بطاطا، توم، كبيس، بندورة، حامض</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">سجق فرنجي</th><!-- snack -->
+            </tr>
+          </table>
+        </div>
+
+        <div class="menu1">
+          <table style="width: 100%;">
+            <tr>
+              <th style="border: none;"></th>
+              <th style="border: none;"></th>
+              <th style="border: none;font-size: 25px;"><b>وجبات</b></th><!-- ------wajbe------ -->
+            </tr>
+          </table>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 110px;">
+                سعر: 650,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة توم، علبة سلطة، علبة صوص كوكتيل، علبة كتشب، بطاطا + رغيف فرنجي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة كرسبي</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 900,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة توم، علبة سلطة، علبة صوص كوكتيل، علبة كتشب، بطاطا + رغيف فرنجي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة كرسبي إكسترا</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 650,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة توم، علبة سلطة، علبة صوص كوكتيل، علبة كتشب، بطاطا + رغيف فرنجي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة أسكالوب</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 900,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة توم، علبة سلطة، علبة صوص كوكتيل، علبة كتشب، بطاطا + رغيف فرنجي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة أسكالوب إكسترا</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 650,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة حمص، بندورة، بيواز، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة مشاوي</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 900,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة حمص، بندورة، بيواز، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة مشاوي إكسترا</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 650,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة حمص، بندورة، بيواز، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة طاووق</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 900,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة حمص، بندورة، بيواز، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة طاووق إكسترا</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 650,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة حمص، بندورة، بيواز، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة لحمة</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 900,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة حمص، بندورة، بيواز، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة لحمة إكسترا</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 650,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة حمص، بندورة، بيواز، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة كفتة</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 900,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة حمص، بندورة، بيواز، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة كفتة إكسترا</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 650,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة سلطة، بطاطا، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة نصف فروج غاز</th><!-- wajbe -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 700,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>علبة سلطة، بطاطا، كبيس + رغيفين خبز عربي</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">وجبة نصف فروج فحم</th><!-- wajbe -->
+            </tr>
+          </table>
+        </div>
+
+        <div class="menu1">
+          <table style="width: 100%;">
+            <tr>
+              <th style="border: none;"></th>
+              <th style="border: none;"></th>
+              <th style="border: none;font-size: 25px;"><b>علب</b></th><!-- ------3elab------ -->
+            </tr>
+          </table>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 110px;">
+                سعر: 150,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">علبة بطاطا</th><!-- 3elab -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 200,000
+                <br>
+                صغير: 100,000
+              </td>
+              <td>فنجان: 25,000</td>
+              <th style="border-right: 0px;font-size:larger;">علبة توم</th><!-- 3elab -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 200,000
+                <br>
+                صغير: 100,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">علبة سلطة</th><!-- 3elab -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 200,000
+                <br>
+                صغير: 100,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">علبة حمص</th><!-- 3elab -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 200,000
+                <br>
+                صغير: 100,000
+              </td>
+              <td>فنجان: 25,000</td>
+              <th style="border-right: 0px;font-size:larger;">علبة صوص أفوكا</th><!-- 3elab -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 200,000
+                <br>
+                صغير: 100,000
+              </td>
+              <td>فنجان: 25,000</td>
+              <th style="border-right: 0px;font-size:larger;">علبة صوص كوكتيل</th><!-- 3elab -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 200,000
+                <br>
+                صغير: 100,000
+              </td>
+              <td>فنجان: 25,000</td>
+              <th style="border-right: 0px;font-size:larger;">علبة ميونيز</th><!-- 3elab -->
+            </tr>
+
+            <tr>
+              <td>
+                كبير: 200,000
+                <br>
+                صغير: 100,000
+              </td>
+              <td>فنجان: 25,000</td>
+              <th style="border-right: 0px;font-size:larger;">علبة حر</th><!-- 3elab -->
+            </tr>
+          </table>
+        </div>
+
+        <div class="menu1">
+          <table style="width: 100%;">
+            <tr>
+              <th style="border: none;"></th>
+              <th style="border: none;"></th>
+              <th style="border: none;font-size: 25px;"><b>صحون</b></th><!-- ------s700n------ -->
+            </tr>
+          </table>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 110px;">
+                صغير: 250,000
+              </td>
+              <td style="width: 110px;">
+                كبير: 500,000
+                <br>
+                وسط: 350,000
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن بطاطا</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>
+                كبير: 500,000
+                <br>
+                وسط: 350,000
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن حمص</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>
+                كبير: 500,000
+                <br>
+                وسط: 350,000
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن سلطة</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 450,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + فرنجي برغر</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن همبرغر</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 500,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + بيضة + فرنجي برغر</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن همبرغر مع بيض</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 500,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + جبنة + فرنجي برغر</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن تشيز برغر</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 550,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + جبنة + بيضة + فرنجي برغر</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن تشيز برغر مع بيض</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 450,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + فرنجي برغر</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن تشكن برغر</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 500,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + جبنة + فرنجي برغر</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن تشكن تشيز</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 500,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + بيضة + فرنجي برغر</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن تشكن برغر مع بيض</th><!-- s700n -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 550,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>سلطة، بطاطا، كتشب + جبنة + بيضة + فرنجي برغر</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">صحن تشكن تشيز مع بيض</th><!-- s700n -->
+            </tr>
+          </table>
+        </div>
+
+        <div class="menu1">
+          <table style="width: 100%;">
+            <tr>
+              <th style="border: none;"></th>
+              <th style="border: none;"></th>
+              <th style="border: none;font-size: 25px;"><b>مشاوي بالكيلو</b></th><!-- ------mashewe2------ -->
+            </tr>
+          </table>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 110px;">
+                سعر: 2,000,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس، بطاطا</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">كيلو مشاوي</th><!-- mashewe2 -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 1,000,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس، بطاطا</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">نصف كيلو مشاوي</th><!-- mashewe2 -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 2,000,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس، بطاطا</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">كيلو طاووق</th><!-- mashewe2 -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 1,000,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس، بطاطا</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">نصف كيلو طاووق</th><!-- mashewe2 -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 2,000,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">كيلو كفتة</th><!-- mashewe2 -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 1,000,000
+              </td>
+              <td style="width: 90px;">
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">نصف كيلو كفتة</th><!-- mashewe2 -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 2,000,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">كيلو لحمة</th><!-- mashewe2 -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 1,000,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>حمص، بندورة، بيواز، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">نصف كيلو لحمة</th><!-- mashewe2 -->
+            </tr>
+          </table>
+        </div>
+
+        <div class="menu1">
+          <table style="width: 100%;">
+            <tr>
+              <th style="border: none;"></th>
+              <th style="border: none;"></th>
+              <th style="border: none;font-size: 25px;"><b>فروج</b></th><!-- ------farooj------ -->
+            </tr>
+          </table>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 110px;">
+                سعر: 800,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">فروج غاز</th><!-- farooj -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 400,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">نصف فروج غاز</th><!-- farooj -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 1,000,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">فروج فحم</th><!-- farooj -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 500,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، كبيس</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">نصف فروج فحم</th><!-- farooj -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 1,500,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، كبيس، سلطة، بطاطا ودجيز</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">فروج بروستد</th><!-- farooj -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 750,000
+              </td>
+              <td>
+                <div class="menu-container">
+                  <span class="menu-icon" onclick="toggleMenu(event)">المحتويات</span>
+                  <div id="dropdown" class="dropdown-menu">
+                    <p>توم، كبيس، سلطة، بطاطا ودجيز</p>
+                </div>
+              </td>
+              <th style="border-right: 0px;font-size:larger;">نصف فروج بروستد</th><!-- farooj -->
+            </tr>
+          </table>
+        </div>
+
+        <div class="menu1">
+          <table style="width: 100%;">
+            <tr>
+              <th style="border: none;"></th>
+              <th style="border: none;"></th>
+              <th style="border: none;font-size: 25px;"><b>مشروبات</b></th><!-- ------desser------ -->
+            </tr>
+          </table>
+
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 110px;">
+                سعر: 25,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">مياه صغير</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 50,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">مياه كبير</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 60,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">بيبسي</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 60,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">بيبسي دايت</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 70,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">بيبسي تنك</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 130,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">بيبسي جامبو</th><!-- desser -->
+            </tr>
+            
+            <tr>
+              <td>
+                سعر: 150,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">بيبسي ابو جامبو</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 60,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">ميرندا</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 70,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">ميرندا تنك</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 130,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">ميرندا جامبو</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 150,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">ميرندا ابو جامبو</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 60,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">سفن اب</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 60,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">سفن اب دايت</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 70,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">سفن اب تنك</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 130,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">سفن اب جامبو</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 150,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">سفن اب ابو جامبو</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 60,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">لبن</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 50,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">Zee cola</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 50,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">تمر هندي</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 50,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">سفن اب zee cola</th><!-- desser -->
+            </tr>
+
+            <tr>
+              <td>
+                سعر: 100,000
+              </td>
+              <td></td>
+              <th style="border-right: 0px;font-size:larger;">Zee cola جامبو</th><!-- desser -->
+            </tr>
+
+          </table>
+        </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="foot">
+      <b>
+        <p>
+          <a href="main.html">Home</a><br>
+          Beirut,Jnah Al Sultan Ibrahim<br>
+          +961 01/823 694 - +961 70/913 192<br>
+          Tuesday to Sunday<br>
+          11:30 AM to 11:00 PM<br>
+          delivery from 1:00 PM to 10:00 PM
+        </p>
+      </b>
+    </div>
+  </footer>
+</html>
+
+<script>
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    const image = document.getElementById("logo");
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+    // Smoothly shrink image based on scroll
+    if (scrollTop > 100) {
+      image.style.width = "10%";
+      image.style.marginTop = "10px";
+      image.style.marginBottom = "10px";
+    } else if (scrollTop > 50) {
+      image.style.width = "30%";
+      image.style.marginTop = "30px";
+      image.style.marginBottom = "30px";
+    } else {
+      image.style.width = "80%";
+      image.style.marginTop = "90px";
+      image.style.marginBottom = "70px";
+    }
+  }
+
+  function toggleMenu(event) {
+    event.stopPropagation(); // Prevent window.onclick from closing it immediately
+    const clickedButton = event.target;
+    const dropdown = clickedButton.nextElementSibling;
+
+    // Close all other dropdowns
+    const allDropdowns = document.querySelectorAll('.dropdown-menu');
+    allDropdowns.forEach(menu => {
+      if (menu !== dropdown) {
+        menu.style.display = "none";
+      }
+    });
+
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  // إغلاق القائمة عند النقر خارجها
+  window.onclick = function(event) {
+    if (!event.target.matches('.menu-icon')) {
+      const dropdowns = document.querySelectorAll(".dropdown-menu");
+      dropdowns.forEach(menu => {
+        menu.style.display = "none";
+      });
+    }
+  };
+</script>
