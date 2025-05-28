@@ -1,84 +1,94 @@
 body {
-    background-image: url("images/backg.jpg");
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  background-image: url("images/backg.jpg");
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 header {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 #logo {
-    border: 5px solid rgb(230, 162, 37);
-    border-radius: 50%;
-    width: 80%;
-    transition: all 0.5s ease;
-    margin: 50px auto;
-    display: block;
+  border: 5px solid rgb(230, 162, 37);
+  border-radius: 50%;
+  width: 80%;
+  transition: all 0.5s ease;
+  margin: 50px auto;
+  display: block;
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .snacks {
-    background-color: black;
-    text-decoration:none;
-    display: inline-flex;
-    border: 10px solid goldenrod;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+  background-color: black;
+  text-decoration:none;
+  display: inline-flex;
+  border: 10px solid goldenrod;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
 }
 .snacks p {
-    font-style: italic;
-    font-display: center;
-    color: gold;
+  font-style: italic;
+  font-display: center;
+  color: gold;
 }
 
 p.one {
-    border: solid;
-    border-width: 7px;
-    border-radius: 50px;
-    background-color: black;
-    color: rgb(230, 162, 37);
-    height: 50px;
-    left: 50%;
+  border: solid;
+  border-width: 7px;
+  border-radius: 50px;
+  background-color: black;
+  color: rgb(230, 162, 37);
+  height: 50px;
+  left: 50%;
 }
 
-.new {
+.news {
   border: 5px solid rgb(230, 162, 37);
   border-radius: 50px;
+  width: 95%;
   background-color: rgba(169, 169, 169, 0.8);
-  display:grid;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 300px;
-  margin: 50px auto;
+  display: block;
+  justify-self:center;
 }
-.new h2 {
+.news h2 {
   text-align: center;
   color: gold;
   margin-top: 5px;
   margin-bottom: 5px;
+  border-bottom: 1px solid gold;
+}
+
+.new {
+  border: 5px solid rgb(230, 162, 37);
+  border-radius: 25px;
+  background-color: rgba(255, 127, 80, 0.6);
+  display:inline-table;
+  width: 110px;
+  height: 150px;
+  margin: 5px auto;
+  margin-left: 5px;
 }
 .new img {
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
   display: block;
+  justify-self:center;
+  border-radius: 25px;
 }
 .new p {
   text-align: center;
-  color: gold;
 }
 
 footer {
