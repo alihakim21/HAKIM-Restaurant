@@ -70,25 +70,63 @@ p.one {
   border-bottom: 1px solid gold;
 }
 
-.new {
-  border: 5px solid rgb(230, 162, 37);
-  border-radius: 25px;
-  background-color: rgba(255, 127, 80, 0.6);
-  display:inline-table;
-  width: 110px;
-  height: 150px;
-  margin: 5px auto;
-  margin-left: 5px;
+.slider-container {
+  position: relative;
+  width: 96%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
 }
-.new img {
-  width: 110px;
-  height: 110px;
-  display: block;
-  justify-self:center;
-  border-radius: 25px;
+
+.product-slider {
+  display: flex;
+  transition: transform 0.4s ease;
+  gap: 20px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  padding: 20px 40px; /* padding to leave room for buttons */
+  scroll-snap-type: x mandatory;
 }
-.new p {
+
+.product-card {
+  flex: 0 0 auto;
+  width: 150px;
+  background: rgba(255, 127, 80, 0.6);
+  border-radius: 10px;
+  padding: 10px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card h3 {
+  color: gold;
+}
+
+.product-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
 }
 
 footer {

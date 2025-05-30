@@ -5,35 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>HAKIM RESTAURANT</title>
+    <link rel="website icon" type="jpg" href="images\logo.jpg">
   </head>
 
   <header>
 
     <script>
-    window.onscroll = function () {
-      scrollFunction();
-    };
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-    function scrollFunction() {
-      const image = document.getElementById("logo");
-      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      function scrollFunction() {
+        const image = document.getElementById("logo");
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-      // Smoothly shrink image based on scroll
-      if (scrollTop > 100) {
-        image.style.width = "10%";
-        image.style.marginTop = "10px";
-        image.style.marginBottom = "10px";
-      } else if (scrollTop > 50) {
-        image.style.width = "30%";
-        image.style.marginTop = "30px";
-        image.style.marginBottom = "30px";
-      } else {
-        image.style.width = "80%";
-        image.style.marginTop = "90px";
-        image.style.marginBottom = "70px";
+        // Smoothly shrink image based on scroll
+        if (scrollTop > 100) {
+          image.style.width = "10%";
+          image.style.marginTop = "10px";
+          image.style.marginBottom = "10px";
+        } else if (scrollTop > 50) {
+          image.style.width = "30%";
+          image.style.marginTop = "30px";
+          image.style.marginBottom = "30px";
+        } else {
+          image.style.width = "80%";
+          image.style.marginTop = "90px";
+          image.style.marginBottom = "70px";
+        }
       }
-    }
-  </script>
+
+      const slider = document.querySelector('.product-slider');
+
+      let scrollAmount = 0;
+      const scrollPerClick = 200; // depends on card width + gap
+
+      nextBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: scrollPerClick, behavior: 'smooth' });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: -scrollPerClick, behavior: 'smooth' });
+      });
+    </script>
 
 
     <a href="index.html"><img id="logo" src="images\logo.jpg" alt="HAKIM"></a>
@@ -52,36 +66,32 @@
 
     <div class="news" >
       <h2>جديد</h2>
-      <div class="new">
-        <img src="images/samke-fili.jpg" alt="samke">
-        <b>
-          <h2 style="border-bottom: 0px;">سمكة فيلي</h2>
-          <p>سعر: 400,000</p>
-        </b>
-      </div>
+      <div class="slider-container">
+        
+        <div class="product-slider">
+          <div class="product-card">
+            <img src="images/samke-fili.jpg" alt="samke">
+            <h3>سمكة فيلي</h3>
+            <p>سعر: 400,000</p>
+          </div>
+          <div class="product-card">
+            <img src="images/samke-7arra.jpg" alt="samke">
+            <h3>سمكة حرة</h3>
+            <p>سعر: 400,000</p>
+          </div>
+          <div class="product-card">
+            <img src="images/shawerma.jpg" alt="shawarma">
+            <h3>شاورما دجاج</h3>
+            <p>سعر: 350,000</p>
+          </div>
+          <div class="product-card">
+            <img src="images/terky.jpg" alt="terky">
+            <h3>شاورما تركي</h3>
+            <p>سعر: 450,000</p>
+          </div>
+          <!-- Add more product cards as needed -->
+        </div>
 
-      <div class="new">
-        <img src="images/samke-7arra.jpg" alt="samke">
-        <b>
-          <h2 style="border-bottom: 0px;">سمكة حرة</h2>
-          <p>سعر: 400,000</p>
-        </b>
-      </div>
-
-      <div class="new">
-        <img src="images/shawerma.jpg" alt="shawarma">
-        <b>
-          <h2 style="border-bottom: 0px;">شاورما دجاج</h2>
-          <p>سعر: 350,000</p>
-        </b>
-      </div>
-
-      <div class="new">
-        <img src="images/terky.jpg" alt="terky">
-        <b>
-          <h2 style="border-bottom: 0px;">شاورما تركي</h2>
-          <p>سعر: 450,000</p>
-        </b>
       </div>
     </div>
     
